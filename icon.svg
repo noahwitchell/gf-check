@@ -1,17 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <path id="k" d="M0-50C24-28 24 28 0 50C-24 28-24-28 0-50Z"/>
+  </defs>
   <rect width="512" height="512" fill="#2f6b4f"/>
-  <g fill="#f6e7b8">
-    <rect x="243" y="150" width="26" height="300" rx="13"/>
-    <ellipse cx="256" cy="96" rx="30" ry="52"/>
-    <ellipse cx="208" cy="168" rx="32" ry="58" transform="rotate(-35 208 168)"/>
-    <ellipse cx="304" cy="168" rx="32" ry="58" transform="rotate(35 304 168)"/>
-    <ellipse cx="208" cy="250" rx="32" ry="58" transform="rotate(-35 208 250)"/>
-    <ellipse cx="304" cy="250" rx="32" ry="58" transform="rotate(35 304 250)"/>
-    <ellipse cx="208" cy="332" rx="32" ry="58" transform="rotate(-35 208 332)"/>
-    <ellipse cx="304" cy="332" rx="32" ry="58" transform="rotate(35 304 332)"/>
+  <g fill="#fbf8f0" stroke="#2f6b4f" stroke-width="6" paint-order="stroke">
+    <use href="#k" transform="translate(256 106)"/>
+    <use href="#k" transform="translate(220 180) rotate(-38)"/>
+    <use href="#k" transform="translate(292 180) rotate(38)"/>
+    <use href="#k" transform="translate(220 256) rotate(-38)"/>
+    <use href="#k" transform="translate(292 256) rotate(38)"/>
+    <use href="#k" transform="translate(220 332) rotate(-38)"/>
+    <use href="#k" transform="translate(292 332) rotate(38)"/>
   </g>
-  <g fill="none" stroke="#ef5a43" stroke-width="44" stroke-linecap="round">
-    <circle cx="256" cy="256" r="218"/>
-    <path d="M102 102L410 410"/>
+  <rect x="248" y="150" width="16" height="276" rx="8" fill="#fbf8f0"/>
+  <path d="M110 110L402 402" stroke="#2f6b4f" stroke-width="52" stroke-linecap="round"/>
+  <g fill="none" stroke="#f2a93b" stroke-width="36" stroke-linecap="round">
+    <circle cx="256" cy="256" r="206"/>
+    <path d="M110 110L402 402"/>
   </g>
 </svg>
