@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GF Check</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GF Check">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17181a" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><h1 id="screen-title">Groceries</h1></header>
+
+<main>
+  <!-- Groceries -->
+  <section id="tab-scan" class="tab active">
+    <div class="card">
+      <div id="reader" class="reader" hidden></div>
+      <div class="row">
+        <button id="btn-scan" class="primary big">Scan barcode</button>
+        <button id="btn-stop" class="big" hidden>Stop camera</button>
+      </div>
+      <form id="form-code" class="row">
+        <input id="in-code" inputmode="numeric" autocomplete="off" placeholder="Or type the barcode number">
+        <button type="submit">Look up</button>
+      </form>
+      <form id="form-search" class="row">
+        <input id="in-search" type="search" autocomplete="off" placeholder="Or search by name, e.g. cheerios">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div id="search-results"></div>
+    <div id="product"></div>
+  </section>
+
+  <!-- Restaurants -->
+  <section id="tab-places" class="tab">
+    <div id="places-list"></div>
+    <div id="place-detail" hidden></div>
+  </section>
+
+  <!-- History -->
+  <section id="tab-history" class="tab">
+    <div id="history"></div>
+  </section>
+
+  <!-- AI settings -->
+  <section id="tab-ai" class="tab">
+    <div class="card">
+      <h2>On-phone AI reader</h2>
+      <p class="muted">A small AI model that runs inside this browser. It reads reviews and pulls out what matters for celiac safety, quoting the exact sentence each time. Nothing is sent anywhere. The first load downloads the model once; after that it's stored on the phone.</p>
+      <label class="field">Model
+        <select id="ai-model"></select>
+      </label>
+      <div class="row"><button id="btn-ai-load" class="primary">Load model</button></div>
+      <div id="ai-status" class="muted small"></div>
+      <div class="bar" hidden><div id="ai-bar"></div></div>
+    </div>
+    <div class="card">
+      <h2>About the grades</h2>
+      <p class="muted small">Grocery grades come from Open Food Facts (a free, crowd-built product database) plus gluten rules: wheat, barley, rye, malt, uncertified oats, and the other grains that hide on labels. US law requires wheat to be named but not barley or rye, so the rules look for those by name. Database entries can be out of date. When it matters, check the package.</p>
+      <p class="muted small">Restaurant findings are only as good as the reviews and menus you add. No online source can rule out cross-contact in a kitchen, so call ahead.</p>
+    </div>
+  </section>
+</main>
+
+<nav class="tabs">
+  <button data-tab="scan" class="on"><span class="ico">▦</span>Groceries</button>
+  <button data-tab="places"><span class="ico">⌂</span>Restaurants</button>
+  <button data-tab="history"><span class="ico">↺</span>History</button>
+  <button data-tab="ai"><span class="ico">✦</span>AI</button>
+</nav>
+
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
