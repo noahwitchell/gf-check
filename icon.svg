@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <path id="k" d="M0-50C24-28 24 28 0 50C-24 28-24-28 0-50Z"/>
+    <path id="k" d="M0-58C30-33 30 33 0 58C-30 33-30-33 0-58Z"/>
   </defs>
   <rect width="512" height="512" fill="#2f6b4f"/>
-  <g fill="#fbf8f0" stroke="#2f6b4f" stroke-width="6" paint-order="stroke">
-    <use href="#k" transform="translate(256 118)"/>
-    <use href="#k" transform="translate(220 180) rotate(-38)"/>
-    <use href="#k" transform="translate(292 180) rotate(38)"/>
-    <use href="#k" transform="translate(220 256) rotate(-38)"/>
-    <use href="#k" transform="translate(292 256) rotate(38)"/>
-    <use href="#k" transform="translate(220 332) rotate(-38)"/>
-    <use href="#k" transform="translate(292 332) rotate(38)"/>
+  <g fill="#fbf8f0" stroke="#2f6b4f" stroke-width="7" paint-order="stroke">
+    <use href="#k" transform="translate(256 132) scale(1.18)"/>
+    <use href="#k" transform="translate(212 196) rotate(-42)"/>
+    <use href="#k" transform="translate(300 196) rotate(42)"/>
+    <use href="#k" transform="translate(212 280) rotate(-42)"/>
+    <use href="#k" transform="translate(300 280) rotate(42)"/>
+    <use href="#k" transform="translate(212 364) rotate(-42)"/>
+    <use href="#k" transform="translate(300 364) rotate(42)"/>
   </g>
-  <rect x="248" y="120" width="16" height="296" rx="8" fill="#fbf8f0"/>
-  <path d="M110 110L402 402" stroke="#2f6b4f" stroke-width="52" stroke-linecap="round"/>
+  <rect x="246" y="134" width="20" height="306" rx="10" fill="#fbf8f0"/>
+  <path d="M110 110L402 402" stroke="#2f6b4f" stroke-width="54" stroke-linecap="round"/>
   <g fill="none" stroke="#f2a93b" stroke-width="36" stroke-linecap="round">
     <circle cx="256" cy="256" r="206"/>
     <path d="M110 110L402 402"/>
