@@ -4,7 +4,7 @@
   </defs>
   <rect width="512" height="512" fill="#2f6b4f"/>
   <g fill="#fbf8f0" stroke="#2f6b4f" stroke-width="6" paint-order="stroke">
-    <use href="#k" transform="translate(256 106)"/>
+    <use href="#k" transform="translate(256 118)"/>
     <use href="#k" transform="translate(220 180) rotate(-38)"/>
     <use href="#k" transform="translate(292 180) rotate(38)"/>
     <use href="#k" transform="translate(220 256) rotate(-38)"/>
@@ -12,7 +12,7 @@
     <use href="#k" transform="translate(220 332) rotate(-38)"/>
     <use href="#k" transform="translate(292 332) rotate(38)"/>
   </g>
-  <rect x="248" y="150" width="16" height="276" rx="8" fill="#fbf8f0"/>
+  <rect x="248" y="120" width="16" height="296" rx="8" fill="#fbf8f0"/>
   <path d="M110 110L402 402" stroke="#2f6b4f" stroke-width="52" stroke-linecap="round"/>
   <g fill="none" stroke="#f2a93b" stroke-width="36" stroke-linecap="round">
     <circle cx="256" cy="256" r="206"/>
